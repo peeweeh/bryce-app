@@ -1,0 +1,8 @@
+flask
+sqlalchemy
+marshmallow
+flask-sqlalchemy
+flask-marshmallow
+marshmallow-sqlalchemy
+greenlet
+flask-cors

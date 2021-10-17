@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Blank from './Blank';
+import Create from './Create';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  
+    <Router>
+          <Switch>
+                <Route exact path="/" component={App} />
+                <Route exact path="/blank" component={Blank} />
+                <Route exact path="/create" component={Create} />
+          </Switch>
+        </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
