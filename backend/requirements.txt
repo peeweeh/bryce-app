@@ -6,3 +6,6 @@ flask-marshmallow
 marshmallow-sqlalchemy
 greenlet
 flask-cors
+psycopg2
+werkzeug
+#trend-app-protect

@@ -5,6 +5,8 @@ import './index.css';
 import App from './App';
 import Blank from './Blank';
 import Create from './Create';
+import FileUpload from './FileUpload';
+import Edit from './Edit';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -15,6 +17,8 @@ ReactDOM.render(
                 <Route exact path="/" component={App} />
                 <Route exact path="/blank" component={Blank} />
                 <Route exact path="/create" component={Create} />
+                <Route exact path="/fileupload" component={FileUpload} />
+                <Route exact path="/edit/:id" render={ ({match}) => <Edit id={match.params.id}/>}/>
           </Switch>
         </Router>
   </React.StrictMode>,

@@ -43,12 +43,7 @@ function App() {
           </Col>
         
         </Row>
-        <Row>
-          <Col sm={12}>
-            <Button variant="primary">Add</Button>
-          </Col>
-          
-        </Row>
+
       </Container>
    
 

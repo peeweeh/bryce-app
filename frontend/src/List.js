@@ -23,7 +23,7 @@ const List = ({data}) => {
                 <td>{data.description} </td>
                 <td>{data.price}</td>
                 <td>{data.qty}</td>
-                <td><Button variant="primary">Edit</Button> <Button variant="danger">Delete</Button></td>
+                <td><Button variant="primary" href={"edit/"+data.id}>Edit</Button> </td>
               
               </tr>;
             })}
